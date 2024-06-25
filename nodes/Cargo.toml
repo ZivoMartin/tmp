@@ -1,0 +1,31 @@
+[package]
+name = "nodes"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+    
+[dependencies]
+tokio = { version = "1.37.0", features = ["full"] }            
+global_lib = { path = ".." }    
+rcgen = "0.9"
+ring = "0.16"
+byteorder = "1.4"
+ark-poly = "0.4"
+ark-std = "0.4"
+rand = "0.8"
+ark-ec = "0.4"
+ark-poly-commit = "0.4.0"
+ark-bls12-381 = "0.4.0"
+ark-cp6-782 = "0.4.0"    
+ark-ff = "0.4"
+ark-serialize = "0.4"
+public-ip = "0.2.2"
+ark-crypto-primitives = "0.4"
+blake2 = "0.10.6"
+ark-sponge = "0.4.0-alpha"
+ark-ed-on-bls12-381 = "0.4.0"
+ark-bls12-377 = "0.4.0"
+ark-bw6-761 = "0.4.0"
+ark-mnt4-753 = "0.4.0"    

@@ -1,0 +1,102 @@
+[
+  {
+    "args": {
+      "byz_comp": 1,
+      "field": "t",
+      "n": 61,
+      "nb_byz": 0,
+      "variation": [
+        6,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    "latency": {
+      "total_sharing": [
+        387,
+        348,
+        288,
+        278,
+        232
+      ]
+    }
+  },
+  {
+    "args": {
+      "byz_comp": 1,
+      "field": "t",
+      "n": 61,
+      "nb_byz": 0,
+      "variation": [
+        6,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    "latency": {
+      "total_reconstruct": [
+        208,
+        234,
+        210,
+        521,
+        1129
+      ]
+    }
+  },
+  {
+    "args": {
+      "byz_comp": 1,
+      "field": "t",
+      "n": 61,
+      "nb_byz": 0,
+      "variation": [
+        6,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    "latency": {
+      "broadcasting": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dealing": [
+        104,
+        122,
+        127,
+        138,
+        153
+      ],
+      "first_receiv": [
+        47,
+        36,
+        37,
+        31,
+        31
+      ],
+      "messages_computing": [
+        54,
+        62,
+        65,
+        72,
+        86
+      ],
+      "verify": [
+        142,
+        135,
+        147,
+        123,
+        96
+      ]
+    }
+  }
+]

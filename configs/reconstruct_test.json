@@ -1,0 +1,16 @@
+[
+    {
+        "hmt": 20,
+		"output": "reconstruct_output"
+    },
+    {
+		"reconstruct": true,
+		"total": true,
+		
+        "n": [50, 70, 90, 110, 130, 150],
+        "t": 3,
+	ckcnkec
+        "nb_byz": 0,
+        "byz_comp": 1
+    }
+]

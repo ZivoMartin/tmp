@@ -1,0 +1,111 @@
+[
+    {
+		"output": "solid_test",
+		"recovering_file": "solid_test_recovering"
+    },
+	{
+		"debit": {
+			"hmt": 10,
+			"duration": 10 ,
+			"sharing": true
+		},
+
+		"latency": {
+			"hmt": 20,
+			"steps": ["total_sharing"]
+		},
+
+
+		"setup": {
+			"n": 150,
+			"t": 33,
+			"nb_byz": [0, "..", 50],
+			"byz_comp": 1
+		}        
+    },	
+    {
+		"debit": {
+			"hmt": 10,
+			"duration": 10 ,
+			"reconstruct": true
+		},
+
+		"latency": {
+			"hmt": 20,
+			"steps": ["total_reconstruct"]
+		},
+
+		"setup": {
+			"n": 151,
+			"t": 33,
+			"nb_byz": [0, "..", 50],
+			"byz_comp": 1
+		}
+    },
+	{
+		"latency": {
+			"hmt": 20,
+			"steps": ["verify", "dealing", "first_receiv", "broadcasting", "messages_computing"]
+		},
+
+		"setup": {
+			"n": 150,
+			"t": 33,
+			"nb_byz": [0, "..", 50],
+			"byz_comp": 1
+		}
+		
+    },
+	{
+		"debit": {
+			"hmt": 10,
+			"duration": 10 ,
+			"sharing": true
+		},
+
+		"latency": {
+			"hmt": 20,
+			"steps": ["total_sharing"]
+		},
+
+
+		"setup": {
+			"n": 61,
+			"t": [10, 15, 20, 25, 33],
+			"nb_byz": 0,
+			"byz_comp": 1
+		}        
+    },	
+    {
+		"debit": {
+			"hmt": 10,
+			"duration": 10 ,
+			"reconstruct": true
+		},
+
+		"latency": {
+			"hmt": 20,
+			"steps": ["total_reconstruct"]
+		},
+
+		"setup": {
+			"n": 61,
+			"t": [10, 15, 20, 25, 33],
+			"nb_byz": 0,
+			"byz_comp": 1
+		}            
+    },
+	{
+		"latency": {
+			"hmt": 20,
+			"steps": ["verify", "dealing", "first_receiv", "broadcasting", "messages_computing"]
+		},
+
+		"setup": {
+			"n": 61,
+			"t": [10, 15, 20, 25, 33],
+			"nb_byz": 0,
+			"byz_comp": 1
+		}		
+    }
+]

@@ -1,0 +1,14 @@
+# Maximum width of each line
+max_width = 100
+
+# Indentation settings
+hard_tabs = false
+tab_spaces = 4
+
+
+# Controls how match arms are formatted
+match_block_trailing_comma = true
+
+# Apply all changes to the original file
+edition = "2021"
+        

@@ -1,0 +1,18 @@
+[
+    {
+		"output": "mini_secret"
+    },
+    {
+		"latency": {
+			"hmt": 10,
+			"steps": ["total_sharing"]
+		},
+
+		"setup": {
+			"n": [70, 80, 90, 100],
+			"t": 33,
+			"nb_byz": 0,
+			"byz_comp": 1
+		}        
+    }	
+]
