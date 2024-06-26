@@ -1,6 +1,4 @@
 pub use byteorder::{ByteOrder, LittleEndian};
-use libnotify::Notification;
-use libnotify::Urgency;
 pub use rand::Rng;
 pub use std::collections::HashMap;
 pub use std::process::exit;
@@ -229,15 +227,4 @@ pub fn log(log: String) {
     //         .expect("Failed to write")
     // });
 }
-
-pub fn init_notify(name: &str) {
-    libnotify::init(name).expect("Failed to initialize libnotify");
-}
-
-pub fn notif(txt: &str) {
-    let notification = Notification::new(txt, None, None);
-    notification.set_urgency(Urgency::Normal);
-    notification.show().expect("Failed to show notification");
-}
-
 //format: rustfmt src/lib.rs src/config_treatment/args.rs src/config_treatment/gnu.rs src/config_treatment/result_fields.rs src/config_treatment/variations.rs src/config_treatment/fields.rs src/config_treatment/subargs.rs  interface/src/main.rs nodes/src/main.rs nodes/src/protocols/avss_simpl.rs nodes/src/crypto/mod.rs nodes/src/crypto/ark_custom.rs ui/src/settings_scene.rs ui/src/widgets.rs ui/src/graph_scene.rs ui/src/config_edit.rs
