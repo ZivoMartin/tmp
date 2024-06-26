@@ -5,15 +5,11 @@
     },
     {
 		"debit": {
-			"hmt": 10,
+			"hmt": 1,
 			"duration": 10 ,
 			"sharing": true
 		},
 		
-		"latency": {
-			"hmt": 15,
-			"steps": ["total_sharing"]
-		},
 
 		"setup": {
 			"n": [40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160],
@@ -24,29 +20,12 @@
     },	
     {
 		"debit": {
-			"hmt": 10,
+			"hmt": 1,
 			"duration": 10 ,
 			"reconstruct": true
 		},
 
-		"latency": {
-			"hmt": 10,
-			"steps": ["total_reconstruct"]
-		},
 
-		"setup": {
-			"n": [40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160],
-			"t": 33,
-			"nb_byz": 0,
-			"byz_comp": 1
-		}        
-    },
-	{
-		"latency": {
-			"hmt": 20,
-			"steps": ["verify", "dealing", "first_receiv", "broadcasting", "messages_computing"]
-		},
-		
 		"setup": {
 			"n": [40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160],
 			"t": 33,
@@ -56,69 +35,40 @@
     },
 	{
 		"debit": {
-			"hmt": 10,
+			"hmt": 1,
 			"duration": 10 ,
 			"sharing": true
 		},
 
-		"latency": {
-			"hmt": 20,
-			"steps": ["total_sharing"]
-		},
-
 
 		"setup": {
-			"n": 150,
+			"n": 61,
 			"t": 33,
-			"nb_byz": [0, "..", 50],
+			"nb_byz": [0, "..", 20],
 			"byz_comp": 1
 		}        
     },	
     {
 		"debit": {
-			"hmt": 10,
+			"hmt": 1,
 			"duration": 10 ,
 			"reconstruct": true
 		},
 
-		"latency": {
-			"hmt": 20,
-			"steps": ["total_reconstruct"]
-		},
 
 		"setup": {
-			"n": 151,
+			"n": 61,
 			"t": 33,
-			"nb_byz": [0, "..", 50],
+			"nb_byz": [0, "..", 20],
 			"byz_comp": 1
 		}
     },
 	{
-		"latency": {
-			"hmt": 20,
-			"steps": ["verify", "dealing", "first_receiv", "broadcasting", "messages_computing"]
-		},
-
-		"setup": {
-			"n": 150,
-			"t": 33,
-			"nb_byz": [0, "..", 50],
-			"byz_comp": 1
-		}
-		
-    },
-	{
 		"debit": {
-			"hmt": 10,
+			"hmt": 1,
 			"duration": 10 ,
 			"sharing": true
 		},
-
-		"latency": {
-			"hmt": 20,
-			"steps": ["total_sharing"]
-		},
-
 
 		"setup": {
 			"n": 61,
@@ -126,37 +76,5 @@
 			"nb_byz": 0,
 			"byz_comp": 1
 		}        
-    },	
-    {
-		"debit": {
-			"hmt": 10,
-			"duration": 10 ,
-			"reconstruct": true
-		},
-
-		"latency": {
-			"hmt": 20,
-			"steps": ["total_reconstruct"]
-		},
-
-		"setup": {
-			"n": 61,
-			"t": [10, 15, 20, 25, 33],
-			"nb_byz": 0,
-			"byz_comp": 1
-		}            
-    },
-	{
-		"latency": {
-			"hmt": 20,
-			"steps": ["verify", "dealing", "first_receiv", "broadcasting", "messages_computing"]
-		},
-
-		"setup": {
-			"n": 61,
-			"t": [10, 15, 20, 25, 33],
-			"nb_byz": 0,
-			"byz_comp": 1
-		}		
     }
 ]
